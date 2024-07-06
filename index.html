@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
 
-<head>
-  <title>Page Title</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <title>My Fun Blog</title>
+      </head>
 
-<body>
+      <body>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle" />
+          <span class="slider round"></span>
+        </label>
+        <main>
+          <h1>My Fun Blog!</h1>
+          <div>
+            <!-- my main blog image -->
+            <img
+              src="assets\css\image\photo-1616017640739-44ce2bfd9b4e.png"
+              alt="light bulb"
+              id="blogImage"
+            />
+          </div>
 
-  <div class="header">
-    <h1>My Fun Blog</h1>
+          <div>
+            <!-- User form -->
+            <h2>Username</h2>
+            <form id="Username">
+              <textarea
+                id="username-input"
+                name="username-input"
+                placeholder="username"
+                rows="1"
+              ></textarea>
+            </form>
+          </div>
 
-  </div>
+          <div>
+            <h2>Subject</h2>
+            <form id="Subject">
+              <textarea
+                id="subject-input"
+                name="subject-input"
+                placeholder="subject"
+                rows="1"
+              ></textarea>
+            </form>
+          </div>
 
-  <div class="navbar">
-    <a href="#" class="active">Home</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#" class="right">Link</a>
-  </div>
+          <div>
+            <h2>What's on your mind?</h2>
+            <form id="thoughts">
+              <textarea
+                id="thoughts-input"
+                name="thoughts-input"
+                placeholder="Share your thoughts here"
+                rows="4"
+              ></textarea>
+              <input type="submit" value="submit" id="submit" />
+            </form>
+          </div>
+        </main>
 
-  <div class="row">
-    
-    <h2>What's On Your Mind</h2>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <form action="/action_page.php">
-      <label for="username">User Name:</label><br>
-      <input type="text" id="username" ><br>
-      <label for="title">Title:</label><br>
-      <input type="text" id="title"><br><br>
-      <label for="title">Content:</label><br>
-      <textarea type="text" id="content" rows="4">
-        <p id="error">&nbsp;</p>
-      <input type="submit" value="Submit" />
-    </form>
-
-
-
-
-
-
-
-
-
-    <!-- <div class="side">
-      <h2> Thoughts Please</table>
-      </h2>
-      <h5>What's On Your Mind:</h5>
-      <div class="fakeimg" style="height:200px;"><Input></Input></div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>More Text</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div>
-    </div>
-    <div class="main">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-
-    </div> -->
-  </div>
-
-  <div class="footer">
-    <h2>Footer</h2>
-  </div>
-  <script src="./assets/script/script.js"></script>
-  <script src="./assets/script/form.js"></script>
-</body>
-
+        <script type="text/javascript" src="assets/js/form.js"></script>
+      </body>
+    </html>
+  </head>
 </html>
